@@ -42,8 +42,8 @@ class Brie(Item):
 
 class Sulfuras(Item):
     def update_quality(self):
-        # do nothin
-        pass
+        if self.quality != 80:
+            self.quality = 80
 
 class Conjured(Item):
     def update_quality(self):
